@@ -35,7 +35,7 @@ import asyncio
 #the next 4 bits are the multiline-message control.
 
 #all lines will be operated in 'pseudo-open-collector' mode, that is
-#control will be maintained by setting all ines to zero, anmd using pindir
+#control will be maintained by setting all lines to zero, and using pindir
 #in or out to control whether they are at high impedance or pulling down.
 #there is significant online evidence that that  lines will tolerate (sort of)
 #5V high-impedance sources when in input mode.
