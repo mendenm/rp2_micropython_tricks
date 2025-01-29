@@ -68,7 +68,7 @@ class compressing_analyzer:
         self.sm_idx = sm_idx % 4
         self.pio_idx = sm_idx // 4
         # set up a passive state machine watching all pins
-        self.sm = rp2.StateMachine(sm_idx, prog=self.pio_prog, in_base=Pin(0))
+        self.sm = rp2.StateMachine(sm_idx, prog=self.pio_prog, in_base=machine.Pin(0))
         self.pio = rp2.PIO(self.pio_idx)
         self.pio_base = _PIO0_base if not self.pio_idx else _PIO1_base
         dma = self.dma = DMA()
